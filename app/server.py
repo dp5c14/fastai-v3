@@ -13,7 +13,7 @@ export_file_url = 'https://drive.google.com/open?id=1CIpE77Ws0jX_sd6X8zV6HwNg7NT
 export_file_name = 'export.pkl'
 
 classes = ['black', 'grizzly', 'teddys']
-path = Path(__stage-1__).parent
+path = Path(__file__).parent
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
